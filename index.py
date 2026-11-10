@@ -6,6 +6,11 @@ class AgentIndex:
         r = self.sendToLLM(msg)
         return r
 
+    def sendToLLM(self , msg):
+
+        return f"Hello iam Large Language Model Thanks for sending msg : {msg}"
+
+
 
 
     
