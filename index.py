@@ -10,6 +10,11 @@ class AgentIndex:
 
         return f"Hello iam Large Language Model Thanks for sending msg : {msg}"
 
+    def ToolCalling(self , toolname):
+        r = self.tool(toolname)
+        r.execute()
+        return f"Executed Successfully..."
+
 
 
 
